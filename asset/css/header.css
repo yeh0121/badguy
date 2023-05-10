@@ -6,7 +6,7 @@
 }
 :root {
     --primary: #3C788A;
-    --second:#E7C97D;
+    --second:#FFDE88;
 }
 .navbar{
     position: fixed;
@@ -33,14 +33,14 @@ nav i{
     color: white;
 }
 .nav-item:hover {
-    background-color: #E7C97D;
+    background-color: var(--second);
     color:white;
 }
 .nav-item:hover .nav-link{
     color:white;
 }
 .nav-icon:hover{
-    color: #E7C97D;
+    color: var(--second);
 }
 .logo{
     display: flex;
@@ -69,7 +69,7 @@ ul,li{
     color: white;
 }
 .dropdown-item:hover{
-    background-color: #E7C97D;
+    background-color: var(--second);
     color: white;
 }
 .dropdown-toggle:hover .dropdown-menu{
@@ -84,6 +84,29 @@ footer{
     background-color: #13404E;
 }
 main{
+    padding-top:50px;
     background-color: #F8F8F8;
     height: 1500px;
+}
+.sayHi{
+    display: flex;
+    align-items: center;
+}
+.sayHi div{
+    padding-right:50px ;
+}
+.title-bolder{
+    font-weight: 900;
+}
+.sayHi p{
+    font-size: 24px;
+    line-height: 50px;
+}
+section{
+    width: 70%;
+    margin: 70px auto;
+    color: var(--primary);
+}
+.catecory{
+    text-align: center;
 }
