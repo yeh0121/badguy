@@ -15,6 +15,7 @@
     <!-- css -->
     <link rel="stylesheet" href="./asset/css/defult.css">
     <link rel="stylesheet" href="./asset/css/header.css">
+    <link rel="stylesheet" href="./asset/css/index.css">
     <!-- icon -->
     <script src="https://kit.fontawesome.com/8d06d3ef0e.js" crossorigin="anonymous"></script>
 
@@ -80,33 +81,53 @@
                     </form>
                 </div>
             </div>
+            
+
             <div id="sign">
                 <div class="sign-area">
-                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">登入</button>
+                    <div class="quit">
+                        <button type="button" class="quit-btn" onclick="document.getElementById('sign').style.display='none'">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+
+                    <div class="sign-brand">
+                        <div class="logo flex-c-c">
+                            <img class="mx-2" src="./asset/img/icon/logo-green.png" alt="">
+                            <div>杯GUY</div>
+                        </div>
+                    </div>
+
+                    <ul class="flex-c-c nav-pills" id="pills-tab" role="tablist">
+                        <li class="tab-item" role="presentation">
+                            <button class="tab-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">登入</button>
                         </li>
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">註冊</button>
+                        <li class="tab-item" role="presentation">
+                            <button class="tab-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">註冊</button>
                         </li>
-                      </ul>
-                      <div class="tab-content" id="pills-tabContent">
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                            <button onclick="document.getElementById('sign').style.display='none'">X</button>
                             <form action="post">
-                                <label for="">
-                                    帳號：
-                                    <input type="text" name="" id="">
-                                </label>
-                                <label for="">
-                                    密碼：
-                                    <input type="text" name="" id="">
-                                </label>
-                                <button type="submit">登入</button>
+                                <div class="input-area">
+                                    <input class="sign-text" type="text" name="" id="" placeholder="帳號或電子郵件">
+                                    <input class="sign-text" type="password" name="" id="" placeholder="密碼">
+                                    <br>
+                                    <button class="sign-btn" type="submit">登入</button>
+                                </div>
                             </form>
                         </div>
-                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-                      </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <form action="post">
+                                <div class="input-area">
+                                    <input class="sign-text" type="text" name="" id="" placeholder="帳號">
+                                    <input class="sign-text" type="text" name="" id="" placeholder="電子郵件">
+                                    <input class="sign-text" type="password" name="" id="" placeholder="密碼">
+                                    <button class="sign-btn" type="submit">註冊</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -115,7 +136,7 @@
     <main>
         <article>
             <section>
-                <div class="flex-c-l">
+                <div class="flex-c-l gap-20">
                     <div>
                         <h2 class="page-title">Hi~歡迎來到杯GUY選物店</h2>
                         <p>
@@ -140,39 +161,81 @@
             <section>
                 <div class="center">
                     <h2 class="page-title">搶手好貨</h2>
-                    <div class="display">
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="./asset/img/display/test2.png" alt="">
+                    <!-- $grid-breakpoints: (
+                        xs: 0,
+                        sm: 576px,
+                        md: 768px,
+                        lg: 992px,
+                        xl: 1200px,
+                        xxl: 1400px
+                    ); -->
+
+                    <div class="container px-4">
+                        <div class="row gx-5">
+                            <div class="col-sm card">
+                                <div class="relative">
+                                    <div class="card-img">
+                                        <img src="./asset/img/display/test2.png" alt="">
+                                    </div>
+                                    <button type="button" class="mask-text">
+                                        查看規格
+                                    </button>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-name">丁香灰大象杯</div>
+                                    <div class="card-price">NT$700</div>
+                                    <button type="button" class="cart-btn">加入購物車</button>
+                                </div>
                             </div>
-                            <div class="card-content">
-                                <div class="card-name">丁香灰大象杯</div>
-                                <div class="card-price">NT$700</div>
-                                <button type="button" class="cart-btn">加入購物車</button>
+                            
+                            <div class="col-sm card">
+                                <div class="relative">
+                                    <div class="card-img">
+                                        <img src="./asset/img/display/test2.png" alt="">
+                                    </div>
+                                    <button type="button" class="mask-text">
+                                        查看規格
+                                    </button>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-name">丁香灰大象杯</div>
+                                    <div class="card-price">NT$700</div>
+                                    <button type="button" class="cart-btn">加入購物車</button>
+                                </div>
+                            </div>
+
+                            <div class="col-sm card">
+                                <div class="relative">
+                                    <div class="card-img">
+                                        <img src="./asset/img/display/test2.png" alt="">
+                                    </div>
+                                    <button type="button" class="mask-text">
+                                        查看規格
+                                    </button>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-name">丁香灰大象杯</div>
+                                    <div class="card-price">NT$700</div>
+                                    <button type="button" class="cart-btn">加入購物車</button>
+                                </div>
+                            </div>
+
+                            <div class="col-sm card">
+                                <div class="relative">
+                                    <div class="card-img">
+                                        <img src="./asset/img/display/test2.png" alt="">
+                                    </div>
+                                    <button type="button" class="mask-text">
+                                        查看規格
+                                    </button>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-name">丁香灰大象杯</div>
+                                    <div class="card-price">NT$700</div>
+                                    <button type="button" class="cart-btn">加入購物車</button>
+                                </div>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="./asset/img/display/test2.png" alt="">
-                            </div>
-                            <div class="card-content">
-                                <div class="card-name">丁香灰大象杯</div>
-                                <div class="card-price">NT$700</div>
-                                <button type="button" class="cart-btn">加入購物車</button>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="./asset/img/display/test2.png" alt="">
-                            </div>
-                            <div class="card-content">
-                                <div class="card-name">丁香灰大象杯</div>
-                                <div class="card-price">NT$700</div>
-                                <button type="button" class="cart-btn">加入購物車</button>
-                            </div>
-                        </div>
-                        
-                        
                     </div>
                 </div>
             </section>

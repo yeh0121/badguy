@@ -67,8 +67,21 @@ footer{
     align-items: center;
     justify-content: center;
 }
+/* grid */
+.grid{
+    display: grid;
+    gap: 32px;
+}
+.gap-20{
+    gap: 20px;
+}
 
 /* 置中 */
 .center{
     text-align: center;
+}
+
+/* position */
+.relative{
+    position: relative;
 }
