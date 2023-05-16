@@ -1,16 +1,5 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-}
-:root {
-    --primary: #3C788A;
-    --second:#FFDE88;
-}
-body{
-    background-color: #F8F8F8;
-}
+@import url(/asset/css/global.css);
+
 .navbar{
     position: fixed;
     width: 100%;
@@ -22,6 +11,7 @@ body{
     font-size: 18px;
     padding: 0;
     z-index: 1;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1)
 }
 .navbar-nav{
     --bs-nav-link-hover-color:var(--second);
@@ -46,6 +36,7 @@ nav i{
 .nav-icon:hover{
     color: var(--second);
 }
+
 .logo{
     display: flex;
     align-items: center;
@@ -60,10 +51,6 @@ nav i{
     margin: 0px 10px;
 }
 
-ul,li{
-    display: inline;
-    list-style: none;
-}
 .dropdown-menu, .dropdown-divider{
     background-color:#619AAB;
     margin: 0;
@@ -79,41 +66,8 @@ ul,li{
 .dropdown-toggle:hover .dropdown-menu{
     display: block;
 }
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    color: white;   
-    background-color: #13404E;
-}
-main{
-    padding-top:50px;
-}
-.sayHi{
-    display: flex;
-    align-items: center;
-}
-.sayHi div{
-    padding-right:50px ;
-}
-.page-title{
-    font-weight: 900;
-    line-height: 72px;
-}
-.sayHi p{
-    font-size: 24px;
-    line-height: 50px;
-    text-indent: 2em;
-}
-section{
-    width: 70%;
-    margin: 70px auto;
-    color: var(--primary);
-}
-.catecory{
-    text-align: center;
-}
+
+
 .display{
     display: grid;
     gap: 32px;
@@ -159,4 +113,25 @@ section{
 }
 .card-price{
     line-height: 32px;
+}
+
+#sign{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: rgba(0, 0,0,0.3);
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.sign-area{
+    width: 500px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    background-color: white;
+    color: var(--primary);
+    border-radius: 20px;
 }

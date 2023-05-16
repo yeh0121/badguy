@@ -1,0 +1,74 @@
+/* all default */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+/* del defult */
+ul,li{
+    display: inline;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* theme color */
+:root {
+    --primary: #3C788A;
+    --second:#FFDE88;
+    --dark-blue:#13404E;
+}
+
+body{
+    background-color: #F8F8F8;
+}
+
+/* 常用樣式 */
+/* 標題及內文 */
+.page-title{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 72px;
+}
+p{
+    font-size: 18px;
+    line-height: 50px;
+    text-indent: 2em;
+}
+
+/* Html5 */
+main{
+    padding-top:50px;
+}
+section{
+    width: 70%;
+    margin: 70px auto;
+    color: var(--primary);
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    color: white;   
+    background-color: var(--dark-blue);
+}
+
+/* flex */
+.flex-c-l{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.flex-c-c{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 置中 */
+.center{
+    text-align: center;
+}

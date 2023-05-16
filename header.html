@@ -1,0 +1,88 @@
+<header>
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <div class="logo">
+                    <img src="./asset/img/icon/logo.png" alt="">
+                    <span>杯GUY</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        SHOP
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">手搖飲杯</a></li>
+                            <li><a class="dropdown-item" href="#">隨行杯</a></li>
+                            <li><a class="dropdown-item" href="#">保溫隨行杯</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">所有商品</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/question.html">Q&A</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-icon">
+                        <a href="/index.html" class="nav-link"><i class="fa-solid fa-house-chimney"></i></a>
+                    </li>
+                    <li class="nav-icon">
+                        <a href="" class="nav-link"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                    <li class="nav-icon">
+                        <button class="nav-link" onclick="document.getElementById('sign').style.display='block'">
+                            <i class="fa-solid fa-user-large"></i>
+                        </button>
+                    </li>
+                </ul>
+
+                <form class="d-flex" role="search" method="get" action="search.jsp">
+                    <div class="logo">
+                        <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="sign">
+            <div class="sign-area">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">登入</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">註冊</button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <button onclick="document.getElementById('sign').style.display='none'">X</button>
+                        <form action="post">
+                            <label for="">
+                                帳號：
+                                <input type="text" name="" id="">
+                            </label>
+                            <label for="">
+                                密碼：
+                                <input type="text" name="" id="">
+                            </label>
+                            <button type="submit">登入</button>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                  </div>
+            </div>
+        </div>
+    </nav>
+</header>
