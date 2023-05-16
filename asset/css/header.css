@@ -1,5 +1,5 @@
-@import url(./asset/css/global.css);
-@import url(./asset/css/sign.css);
+@import url(./global.css);
+@import url(./sign.css);
 
 .navbar{
     position: fixed;
