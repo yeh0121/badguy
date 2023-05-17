@@ -14,8 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="./asset/css/header.css">
-    <link rel="stylesheet" href="./asset/css/display.css">
     <link rel="stylesheet" href="./asset/css/card.css">
+    <link rel="stylesheet" href="./asset/css/detail.css">
     <!-- icon -->
     <script src="https://kit.fontawesome.com/8d06d3ef0e.js" crossorigin="anonymous"></script>
     <!-- 網站標題及logo -->
@@ -140,12 +140,54 @@
     </header>
 
     <main>
-        <div class="big-photo">
-            <img src="./asset/img/display/big-tumbler.png" width="100%" alt="">
+        <!-- 商品資訊 -->
+        <section>
+            <div class="flex-c-c gap-56">
+                <div class="detail-img">
+                    <img src="./asset/img/product/test2.png" alt="">
+                </div>
+
+                <div class="detail-intro">
+                    <div class="product-name">
+                        丁香灰大象杯
+                    </div>
+                    <div class="product-price">
+                        NT$1000
+                    </div>
+                    <div class="flex-c-l">
+                        <div>
+                            <div class="star-progress" style="width: 90%;">
+                                <img src="./asset/img/display/star2.png" width="150px"  alt="">
+                            </div>
+                        </div>
+                        <div>
+                            4.5(13)
+                        </div>
+                    </div>
+                    <div class="flex-c-l gap-20">
+                        <div class="quantity">
+                            <input class="num-text" type="text" name="" id="" value="1">
+                            <button type="button" class="num-add">
+                                <i class="fa-solid fa-caret-up"></i>
+                            </button>
+                            <button type="button" class="num-minus">
+                                <i class="fa-solid fa-caret-down"></i>
+                            </button>
+                        </div>
+                        <button type="button" class="cart-btn">加入購物車</button>
+                    </div>
+                    <button type="button" class="cart-btn">直接購買</button>
+                </div>
+            </div>
+        </section>
+        <!-- 商品介紹、評價 -->
+        <div>
+
         </div>
+        <!-- 推薦商品 -->
         <section>
             <div class="center">
-                <h2 class="page-title">隨行杯系列</h2>
+                <h2 class="page-title">你可能喜歡</h2>
                 <div class="container px-4">
                     <div class="row gx-5">
                         <div class="col-sm card">
@@ -211,7 +253,6 @@
                                 <button type="button" class="cart-btn">加入購物車</button>
                             </div>
                         </div>
-                        
                     </div>
                 </div>
             </div>

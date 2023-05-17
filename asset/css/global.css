@@ -28,7 +28,7 @@ body{
 /* 常用樣式 */
 /* 標題及內文 */
 .page-title{
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 72px;
 }
@@ -44,14 +44,15 @@ main{
 }
 section{
     width: 70%;
-    margin: 70px auto;
+    margin: 52px auto;
     color: var(--primary);
 }
 footer{
-    display: flex;
+    padding: 12px;
+    text-align: center;
+    display: block;
     align-items: center;
-    justify-content: center;
-    height: 50px;
+    justify-items:  center;
     color: white;   
     background-color: var(--dark-blue);
 }
@@ -74,6 +75,12 @@ footer{
 }
 .gap-20{
     gap: 20px;
+}
+.gap-32{
+    gap: 32px;
+}
+.gap-56{
+    gap: 56px;
 }
 
 /* 置中 */
