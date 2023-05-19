@@ -23,7 +23,10 @@ a{
 
 body{
     background-color: #F8F8F8;
+    height: 100%;
 }
+
+
 
 /* 常用樣式 */
 /* 標題及內文 */
@@ -39,14 +42,11 @@ p{
 }
 
 /* Html5 */
-main{
+main {
     padding-top:50px;
+    padding-bottom: 100px;
 }
-section{
-    width: 70%;
-    margin: 52px auto;
-    color: var(--primary);
-}
+
 footer{
     padding: 12px;
     text-align: center;
@@ -55,7 +55,17 @@ footer{
     justify-items:  center;
     color: white;   
     background-color: var(--dark-blue);
+
+    position: relative;
+    margin-top: -40px;
 }
+
+section{
+    width: 70%;
+    margin: 52px auto;
+    color: var(--primary);
+}
+
 
 /* flex */
 .flex-c-l{
@@ -106,17 +116,14 @@ footer{
 
 /* tablets */
 @media (max-width: 768px){
-    section{
+    /* section{
         width: 90%;
-    }
+    } */
 }
 
 /* phones */
 @media (max-width: 576px){
     .page-title{
         font-size: 24px;
-    }
-    section{
-        width: 90%;
     }
 }

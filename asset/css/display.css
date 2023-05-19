@@ -6,3 +6,27 @@
 /* .big-photo img{
     position: absolute;
 } */
+
+
+
+
+@media (min-width: 1200px){
+
+}
+
+/* desktops */
+@media (max-width: 992px) {
+
+}
+
+/* tablets */
+@media (max-width: 768px){
+    
+}
+
+/* phones */
+@media (max-width: 576px){
+    .big-photo{
+        width: 100%;
+    }
+}

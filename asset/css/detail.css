@@ -66,8 +66,28 @@
 .star-progress{
     background-color:#F6D47B; 
 }
+.star-progress img{
+    padding: -1px;
+}
 
 .detail-intro{
     display: flex;
     flex-direction: column;
+}
+
+.detail-tab-title button{
+    color: var(--primary);
+}
+
+.detail-tab-title .nav-link,.nav-item{
+    border-radius: 10px;
+}
+
+.detail-tab-title .nav-item{
+    margin: auto 10px;
+}
+
+.nav-link.active{
+    background-color: var(--primary);
+    color: white;
 }
