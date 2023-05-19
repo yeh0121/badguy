@@ -92,3 +92,31 @@ footer{
 .relative{
     position: relative;
 }
+
+
+/* Extra large devices */
+@media (min-width: 1200px){
+
+}
+
+/* desktops */
+@media (max-width: 992px) {
+
+}
+
+/* tablets */
+@media (max-width: 768px){
+    section{
+        width: 90%;
+    }
+}
+
+/* phones */
+@media (max-width: 576px){
+    .page-title{
+        font-size: 24px;
+    }
+    section{
+        width: 90%;
+    }
+}

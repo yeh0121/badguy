@@ -1,4 +1,8 @@
 .big-photo{
     width: 70%;
     margin: auto;
+    /* position: relative; */
 }
+/* .big-photo img{
+    position: absolute;
+} */
