@@ -1,10 +1,10 @@
 .num-text{
-    width: 100%;
+    text-align: center;
+    width: 50%;
     border-radius: 10px;
     border: 1px var(--primary) solid;
     margin: 10px 0px;
     font-size: 16px;
-    text-indent: 8px;
     padding: 5px;
 }
 .num-text:focus-visible{
@@ -13,29 +13,27 @@
 .num-text::-webkit-input-placeholder{
     color: var(--primary);
     font-size: 16px;
-    text-indent: 8px;
 }
 .quantity{
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
 }
 
 .quantity button{
-    position: absolute;
-    right: 5px;
-    top: 50%;
-    background-color: transparent;
+    background-color: white;
     color: var(--primary);
-    border: none;
+    border: 1px var(--primary) solid;
+    border-radius: 50%;
     font-size: 24px;
-    height: 0px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.num-add{
-    position: absolute;
-    transform:translateY(-24px);
-}
-.num-minus{
-    transform:translateY(-12px);
-}
+
 
 .quantity button:hover{
     color: var(--second);
@@ -91,3 +89,49 @@
     background-color: var(--primary);
     color: white;
 }
+
+
+/* star */
+/* 修改於https://julypenguin.medium.com/%E7%94%A8-css-%E7%95%AB%E5%87%BA%E6%BB%BF%E6%84%8F%E5%BA%A6%E7%9A%84%E6%98%9F%E6%98%9F%E5%92%8C%E7%89%B9%E6%95%88-f653689be8ac */
+.box label{
+    user-select: none;
+}
+.box label::after{
+    content: '☆';
+}
+.box label:hover{
+    cursor:pointer;
+}
+.box label:hover::after{
+    content:'★';
+    color:var(--second);
+}
+.box label:hover~label{
+    content:'★';
+    color:var(--second);
+}
+.box input{
+    display: none;
+}
+
+.box{
+    color: var(--second);
+    font-size: 32px;
+    display: inline-flex;
+    flex-direction: row-reverse;
+}
+
+.box input:checked +label::after{
+    content:'★';
+    color:var(--second);
+}
+.box input:checked ~label::after{
+    content:'★';
+    color:var(--second);
+}
+
+.box input:hover ~label::after{
+    content:'★';
+    color:var(--second);
+}
+
