@@ -90,6 +90,41 @@
     color: white;
 }
 
+.intro-content{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+.intro-content::before{
+    content:"";
+    background-image: url("../img/display/watermark.png");
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-size: 300px;
+    background-repeat:no-repeat;
+}
+
+.product-data{
+    position: relative;
+    border: 1px grey solid;
+    width: fit-content;
+    padding: 24px;
+    margin: 50px auto;
+}
+.product-data::after{
+    content: "商品規格";
+    position: absolute;
+    top: -18px;
+    left: 24px;
+    background-color: rgb(209, 209, 209);
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 18px;
+    padding:2px 6px;
+}
+
+
 
 /* star */
 /* 修改於https://julypenguin.medium.com/%E7%94%A8-css-%E7%95%AB%E5%87%BA%E6%BB%BF%E6%84%8F%E5%BA%A6%E7%9A%84%E6%98%9F%E6%98%9F%E5%92%8C%E7%89%B9%E6%95%88-f653689be8ac */
