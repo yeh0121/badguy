@@ -106,7 +106,7 @@ section{
     height: 100%;
     left: 0%;
     top: 0%;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: var(--gray);
     z-index: 9999;
   }
   #status {/*   這是中間loading的gif坐標css,我們盡量讓他畫面置中  */
@@ -114,8 +114,22 @@ section{
     left: 50%;
     top: 50%;
     transform:translate(-50%,-50%);
+    width: 72px;
+  }
+  #status img{
+    animation: rotate 5s ;
   }
 
+
+@keyframes rotate {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(1080deg);
+        width: 80px;
+    }
+}
 
 /* Extra large devices */
 @media (min-width: 1200px){

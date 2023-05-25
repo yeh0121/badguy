@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:200);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+    padding-top: 20px;
+}
+body {
+  font-family: montserrat, sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  background: #D8EDF0;  
+}
+
+.cards{
+  display: flex;
+}
+.cards__single {
+  margin: 40px auto 0;
+  width: 315px;
+  height: 500px;
+  perspective: 1000px;
+}
+
+.card__inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+.card__inner.flip {
+  transform: rotateY(180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card__face--front {
+  background-image: linear-gradient(to bottom right, #FFF,#F3F3F3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.snip1578 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+  margin: 40px auto 0;
+  width: 315px;
+  width: 100%;
+  height:600px;
+  color: #000;
+  text-align: left;
+  font-size: 16px;
+  background-image: linear-gradient(to bottom right, #FFF,#F3F3F3);
+  border-radius: 10px;
+}
+
+.box:hover img{
+  transform: rotate(30deg);
+}
+
+.snip1578 img {
+  max-width: 50%;
+  margin-top: -5px;
+  margin-left: 50%;
+  margin-bottom: 15px;
+  backface-visibility: hidden;
+  vertical-align: top;
+  border-radius: 5px;
+  transition: 2s;
+}
+
+.snip1578 figcaption {
+  position: absolute;
+  top: 15%;
+  right:0;
+  left: 0;
+  bottom: 0;
+  padding: 15px;
+}
+
+.snip1578 h3 {
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: normal;
+}
+
+.snip1578 .icons {
+  font-size: 2.0rem;
+}
+
+.snip1578 .icons a {
+  color: #ccc;
+}
+
+.snip1578 .icons a:hover {
+  color: #2980b9;
+}
+.card__face--back {
+  background-color: #F3F3F3;
+  transform: rotateY(180deg);
+}
+
+.card__content {
+  width: 100%;
+  height: 100%;
+}
+
+.card__header {
+  position: relative;
+  padding: 30px 30px 40px;
+}
+
+.card__header:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to bottom left, #3C788A 10%, #13404E 115%);
+  z-index: -1;
+  border-radius: 0px 0px 50% 0px;
+}
+
+
+.card__header h2 {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.card__body {
+  padding: 10px;
+}
+

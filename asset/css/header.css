@@ -37,6 +37,20 @@ nav i{
 .nav-icon:hover{
     color: var(--second);
 }
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: white;
+}
+.navbar-toggler{
+    color: white;
+    border: none;
+}
+.navbar-toggler:focus{
+    box-shadow:none;
+}
+.rotate180{
+    transform: rotate(-180deg);
+    animation: rotate180 1s;
+}
 
 .logo{
     display: flex;
@@ -53,12 +67,21 @@ nav i{
 }
 
 .dropdown-menu, .dropdown-divider{
-    background-color:#619AAB;
-    margin: 0;
+    background-color:var(--gray);
+    color: var(--primary);
     padding: 0;
+    margin: 0;
 }
+.dropdown-menu[data-bs-popper] {
+    margin-top: 0px;
+}
+
+.dropdown-menu .dropdown-item{
+    color: var(--primary);
+}
+
 .dropdown-item{
-    color: white;
+    border-radius: 5px;
 }
 .dropdown-item:hover{
     background-color: var(--second);
@@ -66,4 +89,16 @@ nav i{
 }
 .dropdown-toggle:hover .dropdown-menu{
     display: block;
+}
+
+#log-out:hover .dropdown-menu{
+    display: block;
+}
+@keyframes rotate180 {
+    0%{
+        transform: rotate(+0deg);
+    }
+    100%{
+        transform: rotate(-180deg);
+    }
 }

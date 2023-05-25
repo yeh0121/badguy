@@ -32,11 +32,12 @@
                         <span>杯GUY</span>
                     </div>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button id="nav-dropbtn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                onclick="document.getElementById('nav-dropbtn').classList.toggle('rotate180')">
+                    <span><i class="fa-solid fa-caret-down"></i></span>
                 </button>
                 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse  mb-3 mb-md-0" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -58,12 +59,22 @@
                         </li>
                     </ul>
     
-                    <ul class="navbar-nav mb-2 mb-lg-0">
+                    <div class="fs-6 me-3 d-none d-md-block">
+                        hi! 管理員~
+                        <!-- hi! username~ -->
+                    </div>
+                    <!-- 三個icon -->
+                    <ul class="navbar-nav-md flex-c-c mb-2 mb-lg-0">
                         <li class="nav-icon">
-                            <a href="/index.html" class="nav-link"><i class="fa-solid fa-house-chimney"></i></a>
+                            <a href="./index.html" class="nav-link"><i class="fa-solid fa-house-chimney"></i></a>
                         </li>
+                        <!-- 購物車icon(一班會員登入後才顯示) -->
                         <li class="nav-icon">
                             <a href="./cart.html" class="nav-link"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </li>
+                        <!-- 扳手icon(管理員登入後才顯示) -->
+                        <li class="nav-icon">
+                            <a href="./backstage.html" class="nav-link"><i class="fa-solid fa-wrench"></i></a>
                         </li>
                         <!-- 登入前user-btn -->
                         <li class="nav-icon">
@@ -73,13 +84,32 @@
                         </li>
                         <!-- 登入後user-btn -->
                         <template>
-                            <li class="nav-icon">
-                                <a href="./member.html" class="nav-link"><i class="fa-solid fa-user-large"></i></a>
+                            <li class="nav-icon dropdown">
+                                <a id="log-out" href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-user-large"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./member.html">會員中心</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">登出</a></li>
+                                </ul>
+                            </li>
+                        </template>
+                        <!-- 登入後管理員button -->
+                        <template>
+                            <li class="nav-icon dropdown">
+                                <a id="log-out" href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-user-large"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">登出</a></li>
+                                </ul>
                             </li>
                         </template>
                     </ul>
     
-                    <form class="d-flex" role="search" method="get" action="./search.html">
+                    <!-- 搜尋商品 -->
+                    <form class="" role="search" method="get" action="./search.html">
                         <div class="logo">
                             <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -88,7 +118,7 @@
                 </div>
             </div>
             
-    
+            <!-- 登入註冊的小視窗(後端可以另外建一個檔) -->
             <div id="sign">
                 <div class="sign-area">
                     <div class="quit">
@@ -113,6 +143,7 @@
                         </li>
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
+                        <!-- 登入 -->
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                             <form action="post">
                                 <div class="input-area">
@@ -123,6 +154,7 @@
                                 </div>
                             </form>
                         </div>
+                        <!-- 註冊 -->
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                             <form action="post">
                                 <div class="input-area">

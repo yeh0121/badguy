@@ -14,17 +14,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="./asset/css/header.css">
+    <link rel="stylesheet" href="./asset/css/aboutUs.css">
     <!-- icon -->
     <script src="https://kit.fontawesome.com/8d06d3ef0e.js" crossorigin="anonymous"></script>
     <!-- 網站標題及logo -->
     <link rel="icon" href="./asset/img/icon/logo2.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300&display=swap" rel="stylesheet">
     <title>杯GUY-杯杯集會所</title>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html">
+                <a class="navbar-brand" href="#">
                     <div class="logo">
                         <img src="./asset/img/icon/logo.png" alt="">
                         <span>杯GUY</span>
@@ -38,46 +42,39 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                SHOP
+                            SHOP
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./hand-cup.html">手搖飲杯</a></li>
-                                <li><a class="dropdown-item" href="./tumbler.html">隨行杯</a></li>
-                                <li><a class="dropdown-item" href="./thermos.html">保溫隨行杯</a></li>
+                                <li><a class="dropdown-item" href="#">手搖飲杯</a></li>
+                                <li><a class="dropdown-item" href="#">隨行杯</a></li>
+                                <li><a class="dropdown-item" href="#">保溫隨行杯</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="./all.html">所有商品</a></li>
+                                <li><a class="dropdown-item" href="#">所有商品</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./about-us.html">ABOUT US</a>
+                            <a class="nav-link" href="#">ABOUT US</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./question.html">Q&A</a>
+                            <a class="nav-link" aria-current="page" href="/question.html">Q&A</a>
                         </li>
                     </ul>
     
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-icon">
-                            <a href="./index.html" class="nav-link"><i class="fa-solid fa-house-chimney"></i></a>
+                            <a href="/index.html" class="nav-link"><i class="fa-solid fa-house-chimney"></i></a>
                         </li>
                         <li class="nav-icon">
-                            <a href="./cart.html" class="nav-link"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a href="" class="nav-link"><i class="fa-solid fa-cart-shopping"></i></a>
                         </li>
-                        <!-- 登入前user-btn -->
                         <li class="nav-icon">
                             <button class="nav-link" onclick="document.getElementById('sign').style.display='block'">
                                 <i class="fa-solid fa-user-large"></i>
                             </button>
                         </li>
-                        <!-- 登入後user-btn -->
-                        <template>
-                            <li class="nav-icon">
-                                <a href="./member.html" class="nav-link"><i class="fa-solid fa-user-large"></i></a>
-                            </li>
-                        </template>
                     </ul>
     
-                    <form class="d-flex" role="search" method="get" action="./search.html">
+                    <form class="d-flex" role="search" method="get" action="search.jsp">
                         <div class="logo">
                             <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -136,14 +133,215 @@
             </div>
         </nav>
     </header>
-
+   
     <main>
-        
+          
+       <section class="cards">
+            <div class="cards__single">
+                <div class="card__inner">
+                    <div class="card__face card__face--front">
+                        <figure class="snip1578">
+                            <!-- <div class="box">
+                                <img src="asset/img/about-us/4204pic.png" width="180px" height="180px" />
+                            </div> -->
+                            <figcaption>
+                              <h3>許庭瑄 / 前端</h3>
+                              <div class="icons">
+                                <a href="https://www.instagram.com/th_nnon/"> <i class="ion-social-instagram-outline"></i></a>
+                                <a href="#"><i class="ion-social-facebook"></i></a>
+                                <a href="#"> <i class="ion-social-github"></i></a>
+                              </div>
+                              資管二乙 11044204 <br>
+                              instagram: <br><br>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aspernatur eum sit, magni rem nemo? Dignissimos error distinctio sint, quis aut, consectetur atque amet veniam explicabo asperiores ea voluptatum ex voluptatem quas. Saepe, fugit, iste vel aut sapiente suscipit quibusdam, deleniti porro ex quis animi. Sequi, quas. Expedita, at hic.              
+                            </figcaption>
+                          </figure>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <div class="card__content">
+                            <div class="card__header">
+                                <h2>@th_nnon</h2>
+                            </div>
+                            <div class="card__body">
+                                <img src="asset/img/about-us/4204ig.jpg" alt="" width="290px" height="300px">
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="cards__single">
+                <div class="card__inner">
+                    <div class="card__face card__face--front">
+                        <figure class="snip1578">
+                            <div class="box">
+                                <img class="cover-fit" src="asset/img/about-us/4204pic.png" width="180px" height="180px" />
+                            </div>
+                            <figcaption>
+                              <h3>許庭瑄 / 前端</h3>
+                              <div class="icons">
+                                <a href="https://www.instagram.com/th_nnon/"> <i class="ion-social-instagram-outline"></i></a>
+                                <a href="#"><i class="ion-social-facebook"></i></a>
+                                <a href="#"> <i class="ion-social-github"></i></a>
+                              </div>
+                              資管二乙 11044204 <br>
+                              instagram: <br><br>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aspernatur eum sit, magni rem nemo? Dignissimos error distinctio sint, quis aut, consectetur atque amet veniam explicabo asperiores ea voluptatum ex voluptatem quas. Saepe, fugit, iste vel aut sapiente suscipit quibusdam, deleniti porro ex quis animi. Sequi, quas. Expedita, at hic.              
+                            </figcaption>
+                          </figure>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <div class="card__content">
+                            <div class="card__header">
+                                <h2>@th_nnon</h2>
+                            </div>
+                            <div class="card__body">
+                                <img src="asset/img/about-us/4204ig.jpg" alt="" width="290px" height="300px">
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+
+            <div class="cards__single">
+                <div class="card__inner">
+                    <div class="card__face card__face--front">
+                        <figure class="snip1578">
+                            <div class="box">
+                                <img class="cover-fit" src="asset/img/about-us/4204pic.png" width="180px" height="180px" />
+                            </div>
+                            <figcaption>
+                              <h3>許庭瑄 / 前端</h3>
+                              <div class="icons">
+                                <a href="https://www.instagram.com/th_nnon/"> <i class="ion-social-instagram-outline"></i></a>
+                                <a href="#"><i class="ion-social-facebook"></i></a>
+                                <a href="#"> <i class="ion-social-github"></i></a>
+                              </div>
+                              資管二乙 11044204 <br>
+                              instagram: <br><br>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aspernatur eum sit, magni rem nemo? Dignissimos error distinctio sint, quis aut, consectetur atque amet veniam explicabo asperiores ea voluptatum ex voluptatem quas. Saepe, fugit, iste vel aut sapiente suscipit quibusdam, deleniti porro ex quis animi. Sequi, quas. Expedita, at hic.              
+                            </figcaption>
+                          </figure>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <div class="card__content">
+                            <div class="card__header">
+                                <h2>@th_nnon</h2>
+                            </div>
+                            <div class="card__body">
+                                <img src="asset/img/about-us/4204ig.jpg" alt="" width="290px" height="300px">
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+        <section class="cards">
+            <div class="cards__single">
+                <div class="card__inner">
+                    <div class="card__face card__face--front">
+                        <figure class="snip1578">
+                            <div class="box">
+                                <img class="cover-fit" src="asset/img/about-us/4204pic.png" width="180px" height="180px" />
+                            </div>
+                            <figcaption>
+                              <h3>許庭瑄 / 前端</h3>
+                              <div class="icons">
+                                <a href="https://www.instagram.com/th_nnon/"> <i class="ion-social-instagram-outline"></i></a>
+                                <a href="#"><i class="ion-social-facebook"></i></a>
+                                <a href="#"> <i class="ion-social-github"></i></a>
+                              </div>
+                              資管二乙 11044204 <br>
+                              instagram: <br><br>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aspernatur eum sit, magni rem nemo? Dignissimos error distinctio sint, quis aut, consectetur atque amet veniam explicabo asperiores ea voluptatum ex voluptatem quas. Saepe, fugit, iste vel aut sapiente suscipit quibusdam, deleniti porro ex quis animi. Sequi, quas. Expedita, at hic.              
+                            </figcaption>
+                          </figure>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <div class="card__content">
+                            <div class="card__header">
+                                <h2>@th_nnon</h2>
+                            </div>
+                            <div class="card__body">
+                                <img src="asset/img/about-us/4204ig.jpg" alt="" width="290px" height="300px">
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div><div class="cards__single">
+                <div class="card__inner">
+                    <div class="card__face card__face--front">
+                        <figure class="snip1578">
+                            <div class="box">
+                                <img class="cover-fit" src="asset/img/about-us/4204pic.png" width="180px" height="180px" />
+                            </div>
+                            <figcaption>
+                              <h3>許庭瑄 / 前端</h3>
+                              <div class="icons">
+                                <a href="https://www.instagram.com/th_nnon/"> <i class="ion-social-instagram-outline"></i></a>
+                                <a href="#"><i class="ion-social-facebook"></i></a>
+                                <a href="#"> <i class="ion-social-github"></i></a>
+                              </div>
+                              資管二乙 11044204 <br>
+                              instagram: <br><br>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aspernatur eum sit, magni rem nemo? Dignissimos error distinctio sint, quis aut, consectetur atque amet veniam explicabo asperiores ea voluptatum ex voluptatem quas. Saepe, fugit, iste vel aut sapiente suscipit quibusdam, deleniti porro ex quis animi. Sequi, quas. Expedita, at hic.              
+                            </figcaption>
+                          </figure>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <div class="card__content">
+                            <div class="card__header">
+                                <h2>@th_nnon</h2>
+                            </div>
+                            <div class="card__body">
+                                <img src="asset/img/about-us/4204ig.jpg" alt="" width="290px" height="300px">
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div><div class="cards__single">
+                <div class="card__inner">
+                    <div class="card__face card__face--front">
+                        <figure class="snip1578">
+                            <div class="box">
+                                <img class="cover-fit" src="asset/img/about-us/4204pic.png" width="180px" height="180px" />
+                            </div>
+                            <figcaption>
+                              <h3>許庭瑄 / 前端</h3>
+                              <div class="icons">
+                                <a href="https://www.instagram.com/th_nnon/"> <i class="ion-social-instagram-outline"></i></a>
+                                <a href="#"><i class="ion-social-facebook"></i></a>
+                                <a href="#"> <i class="ion-social-github"></i></a>
+                              </div>
+                              資管二乙 11044204 <br>
+                              instagram: <br><br>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aspernatur eum sit, magni rem nemo? Dignissimos error distinctio sint, quis aut, consectetur atque amet veniam explicabo asperiores ea voluptatum ex voluptatem quas. Saepe, fugit, iste vel aut sapiente suscipit quibusdam, deleniti porro ex quis animi. Sequi, quas. Expedita, at hic.              
+                            </figcaption>
+                          </figure>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <div class="card__content">
+                            <div class="card__header">
+                                <h2>@th_nnon</h2>
+                            </div>
+                            <div class="card__body">
+                                <img src="asset/img/about-us/4204ig.jpg" alt="" width="290px" height="300px">
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+        <script src="asset/js/about-us.js"></script>
     </main>
 
     <footer>
-        <div>Copyright @2023 Bad Guy</div>
-        <div>瀏覽人數：1人</div>
+        Copyright @2023 Bad Guy
     </footer>
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
