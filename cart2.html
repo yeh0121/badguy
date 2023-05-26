@@ -179,7 +179,7 @@
                 </span>
                 <span>購物清單</span>
             </div>
-            <div class="step1">
+            <div class="step1-now">
                 <span class="badge">     
                     <div class="text">2</div>              
                 </span>
@@ -194,155 +194,188 @@
         </div>
 
         <!--商品-->
-        <div class="flex-t-c mx-auto" style="margin-bottom: 64px; width: 85%;">
-            <div class="leftside">
-                <div class="cart-header">
-                    <h4 style="padding: 10px;">
-                        購物車(2件)
-                    </h4>
+        
+        <div onclick="toggleDropdown()" class="roll"><strong style="font-size: larger;">合計：NT＄0000</strong><br>購物車（2件）</div>
+        <div id="myDropdown" class="dropdown-content">
+            <section class="cart2">
+                <div class="cart2-block">
+                <div class="name">
+                    <div class="n">商品名稱</div>
+                    <div class="n">價錢</div>
+                    <div class="n">數量</div>
                 </div>
-            
-                <div class="block">
-                    <div class="container center">
-                        <div class="row align-items-center">
-                            <div class="n col-2"></div>
-                            <div class="n col-2">商品名稱</div>
-                            <div class="n col-2">單價</div>
-                            <div class="n col-2">數量</div>
-                            <div class="n col-2">總計</div>
-                            <div class="n col-2">移除商品</div>
-                        </div>
-                    </div>
-                    <div class="line"></div>
-            
-                    <div class="name1">
-                        <div class="container center">
-                            <div class="row align-items-center">
-                                <div class="n col-2">
-                                    <img class="pn" src="./asset/img/product/test2.png"width="120px" height="120px" alt="">
-                                </div>
-                                <div class="n col-2">我是水壺-700ml</div>
-                                <div class="n col-2">NT$1000</div>
-                                <div class="n col-2">
-                                    <div class="quantity-container">
-                                        <div class="btn-circle decrease" onclick="decrease(0)">-</div>
-                                        <div class="quantity-display">1</div>
-                                        <div class="btn-circle increase" onclick="increase(0)">+</div>
-                                    </div>
-                                </div>
-                                <div class="n col-2">NT$1000</div>
-                                <div class="n col-2">X</div>
-                            </div>
-                            <div class="row align-items-center">
-                                <div class="n col-2">
-                                    <img class="pn" src="./asset/img/product/test2.png"width="120px" height="120px" alt="">
-                                </div>
-                                <div class="n col-2">我是水壺-700ml</div>
-                                <div class="n col-2">NT$1000</div>
-                                <div class="n col-2">
-                                    <div class="quantity-container">
-                                        <div class="btn-circle decrease" onclick="decrease(0)">-</div>
-                                        <div class="quantity-display">1</div>
-                                        <div class="btn-circle increase" onclick="increase(0)">+</div>
-                                    </div>
-                                </div>
-                                <div class="n col-2">NT$1000</div>
-                                <div class="n col-2">X</div>
-                            </div>
-                            <div class="row align-items-center">
-                                <div class="n col-2">
-                                    <img class="pn" src="./asset/img/product/test2.png"width="120px" height="120px" alt="">
-                                </div>
-                                <div class="n col-2">我是水壺-700ml</div>
-                                <div class="n col-2">NT$1000</div>
-                                <div class="n col-2">
-                                    <div class="quantity-container">
-                                        <div class="btn-circle decrease" onclick="decrease(0)">-</div>
-                                        <div class="quantity-display">1</div>
-                                        <div class="btn-circle increase" onclick="increase(0)">+</div>
-                                    </div>
-                                </div>
-                                <div class="n col-2">NT$1000</div>
-                                <div class="n col-2">X</div>
-                            </div>
-                            <div class="row align-items-center">
-                                <div class="n col-2">
-                                    <img class="pn" src="./asset/img/product/test2.png"width="120px" height="120px" alt="">
-                                </div>
-                                <div class="n col-2">我是水壺-700ml</div>
-                                <div class="n col-2">NT$1000</div>
-                                <div class="n col-2">
-                                    <div class="quantity-container">
-                                        <div class="btn-circle decrease" onclick="decrease(0)">-</div>
-                                        <div class="quantity-display">1</div>
-                                        <div class="btn-circle increase" onclick="increase(0)">+</div>
-                                    </div>
-                                </div>
-                                <div class="n col-2">NT$1000</div>
-                                <div class="n col-2">X</div>
-                            </div>
-                        </div>
-<!--                         
-            
-                        <div class="pn">我是水壺-700ml</div>
-                        <div class="pn">NT$1000</div>
-                        <div class="pn">
-                            <div class="quantity-container">
-                                <div class="btn-circle decrease" onclick="decrease(0)">-</div>
-                                <div class="quantity-display">1</div>
-                                <div class="btn-circle increase" onclick="increase(0)">+</div>
-                            </div>
-                        </div>
-                        <div class="pn">NT$1000</div>
-                        <div class="pn">X</div> -->
-                    </div>
+                <div class="line"></div>
+                
+                <img class="pimg" src="./asset/img/product/test2.png"width="120px" height="120px" alt="">
+                <div class="name1">
                     
-            
+                    <div class="pn">我是水壺-700ml</div>
+                    <div class="pn">NT$1000</div>
+                    <div class="pn">
+                        <div class="quantity-container">
+                            <div class="btn-circle decrease" onclick="decrease(0)">-</div>
+                            <div class="quantity-display">1</div>
+                            <div class="btn-circle increase" onclick="increase(0)">+</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="block-footer">
+                    <div class="link">
+                <a href="#" onclick="showPopup()">套用優惠&nbsp;&nbsp;></a>
+                    </div>
+                    <div class="total">
+                小計:&nbsp;&nbsp;NT$1000
+                    </div>
+                </div>
+                <script>
+
+                </script>               
+            </div>
+            <div class="block2">
+                <div class="name">
+                    <div class="n">商品名稱</div>
+                    <div class="n">價錢</div>
+                    <div class="n">數量</div>
+                </div>
+                <div class="line"></div>
+                
+                <img class="pimg" src="./asset/img/product/test2.png"width="120px" height="120px" alt="">
+                <div class="name1">
+                    
+                    <div class="pn">我是水壺-700ml</div>
+                    <div class="pn">NT$1000</div>
+                    <div class="pn">
+                        <div class="quantity-container">
+                            <div class="btn-circle decrease" onclick="decrease(1)">-</div>
+                            <div class="quantity-display">1</div>
+                            <div class="btn-circle increase" onclick="increase(1)">+</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="block-footer">
+                    <div class="link">
+                        <a href="#" onclick="showPopup()">套用優惠&nbsp;&nbsp;></a>
+                    </div>
+                    <div class="total">
+                        小計:&nbsp;&nbsp;NT$1000
+                    </div>
+                </div>
+                
+            </div>
+            <div class="money">
+                <div class="money-text">小計：&nbsp;&nbsp;&nbsp;NT$8787<br></div>  
+                <div class="money-text">優惠：&nbsp;&nbsp;&nbsp;NT$0<br></div>
+                <div class="money-text">運費：&nbsp;&nbsp;&nbsp;免運<br></div>
+                <div class="money-text final-money">合計：&nbsp;&nbsp;&nbsp;NT$8787</div>
+            </div>
+        </section>
+        </div>
+    <!--資料填寫-->
+    <article>
+        <div class="pay">
+            <div class="cart2-header1">
+                運送方式＆付款方式
+            </div>
+        <div class="button-container">
+        <div class="left-buttons">
+            <div class="paybutton">
+                <button onclick="elevenDropdown()" class="paytext1">7-ELEVEN</button>
+                
+                <div id="elevenDropdown" class="dropdown-content">
+                    <select>
+                        <option name="" class="location" >新增門市</option>
+                    </select>
+                    
                 </div>
             </div>
-            <div class="rightside">
-                <div class="cart-header">
-                    <h4 style="padding: 10px;">
-                        總金額
-                    </h4>
-                </div>
-                <div class="block">
-                    <div style="line-height: 32px;">
-                        <div class="d-flex justify-content-between">
-                            <div>商品總金額：</div>
-                            <div>NT$1000</div>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <div>運費：</div>
-                            <div>NT$0</div>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <div>折扣：</div>
-                            <div>-NT$50</div>
-                        </div>
-                        <div class="">
-                            <a href="#" onclick="showPopup()">套用優惠<i class="fa-solid fa-chevron-right"></i></a>
-                        </div>
-                        <hr>
-                        <div class="d-flex justify-content-between">
-                            <div>訂單總金額：</div>
-                            <div style="font-size: 24px; color:#de9115;">NT$950</div>
-                        </div>
-                    </div>
-
-                    
-                    
+            <div class="paybutton">
+                <button onclick="familyDropdown()" class="paytext2">全家</button>
+                
+                <div id="familyDropdown" class="dropdown-content">
+                    <select>
+                        <option name="" class="location" >新增門市</option>
+                        <option name="" class="location" >中壢店</option>
+                    </select>
                     
                 </div>
-                <!--按鈕--> 
-                <div class="">
-                    <button type="button" class="button" style="width: 100%;" onclick="location.href='./cart2.html';">
-                        結帳gogo<i class="fa-solid fa-chevron-right"></i>
-                    </button>
+            </div>
+            <div class="paybutton">
+                <button onclick="diliverDropdown()" class="paytext3">宅配</strong></button>
+                
+                <div id="diliverDropdown" class="dropdown-content">
+                    地址：
+                    <select>
+                        <option name="" class="location" >城市/縣</option>
+                    </select>
+                    <select>
+                        <option name="" class="location" >地區</option>
+                    </select>
+                    <input type="text" value="" class="textbox">
                 </div>
             </div>
         </div>
+        <div class="right-buttons">
+            <div class="paymethod-botton">
+                <button class="paymethod"id="PAYmethod">貨到付款</button><br>
+            </div>
+            <div class="paymethod-botton">
+                <button onclick="payDropdown()" class="paymethod">信用卡/金融卡</button>
+                <div id="payDropdown" class="dropdown-content">
+                    <input type="radio" name="" value="" onclick="showcredit()"><img class="visasa"src="./asset/img/cart/visa.png"><br>
+                    <div id="text-box" class="dropdown-content">
+                        <div class="d">
+                        <input type="text" placeholder="卡號" class="credit">
+                        <div class="c">
+                            <div class="a">
+                                <input type="date">
+                            </div>
+                            <div class="a">
+                                <input type="text" placeholder="安全碼" class="creditcard">
+                            </div>
+                        
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+
+        </div>
+        </div>
+
+        <div class="send">
+            <div class="cart2-header2">
+                送貨資料
+            </div>
+            <div class="sendtext">
+            <input type="checkbox" id="">
+            <label for="">&nbsp;同會員資料</label>
+            </div>
+                <div class="sendtext2">
+                    收件人名稱：
+                    <input type="text" value="" class="textbox">
+                </div>
+                <div class="sendtext2">
+                    收件人電話：
+                    <input type="text" value="" maxlength="10" class="textbox">
+                </div>
+
         
+
+        </div>
+           
+    </article>
+    
+    <!--按鈕-->
+    <div class="link2">
+        <a href="./cart.html" class="icon2"> &lt;購物清單 </a>
+        <a href="./cart3.html"><button class="button">提交訂單&gt;</button></a>
+    
+    </div>
     </main>
 
     <footer>

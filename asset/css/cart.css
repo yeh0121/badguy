@@ -1,0 +1,474 @@
+.leftside{
+    margin-top: 48px;
+    width: 70%;
+    margin-right: 32px;
+}
+.rightside{
+    margin-top: 48px;
+    min-width: 300px;
+}
+.step{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.step .step1{
+    display: inline-block;
+    vertical-align: top;
+    width: 240px;
+    max-width: 33%;
+    margin-left: -2px;
+    margin-right: -2px;
+    color: black;
+}
+.step .step1-now{
+    display: inline-block;
+    vertical-align: top;
+    width: 240px;
+    max-width: 33%;
+    margin-left: -2px;
+    margin-right: -2px;
+    color: #CB7D09;
+}
+.step .step1 .badge{
+    position: relative;
+    background-color: transparent;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px;
+}
+.step .step1-now .badge{
+    position: relative;
+    background-color: transparent;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px;
+}
+
+.badge{
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #777777;
+    border-radius: 10px;
+}
+.step .step1 .badge::before {
+    content: " ";
+    background-color: #CCCCCC;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -1px;
+    z-index: 0;
+}
+.step .step1-now .badge::before {
+    content: " ";
+    background-color: #CCCCCC;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -1px;
+    z-index: 0;
+}
+.step .step1 .badge::after {
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    content: " ";
+    background-color: #CCCCCC;
+    height: 30px;
+    width: 30px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    z-index: 0;
+}
+.step .step1-now .badge::after {
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    content: " ";
+    background-color: #E0AA1D;
+    height: 30px;
+    width: 30px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    z-index: 0;
+}
+.step .step1 .badge .text {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.step .step1-now .badge .text {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.step .step1 span {
+    display: block;
+    padding: 0 5px;
+}
+.step .step1-now span {
+    display: block;
+    padding: 0 5px;
+}
+.icon1{
+    color: #CB7D09;
+    left: 75%;
+    top: -20px;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+.icon1:hover{
+    color: #e3a261;
+}
+.link2 .diliver{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.link2{
+    width: 70%;
+    margin: 24px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon2{
+    color: #CB7D09;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+.icon2:hover{
+    color: #e3a261;
+}
+.button{
+    letter-spacing: 2px;
+    background-color: #CB7D09;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: none;
+    margin: 12px auto;
+}
+.button:hover{
+    background-color: #d3983f;
+}
+
+.cart{
+    margin-top: 7%;
+}
+.cart-header{
+    height: 50px;
+    background-color: var(--second);
+}
+.block{
+    border-radius: 0 0 10px 10px;
+    background-color: #fff;
+    padding: 24px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.block2{
+    height: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.name{
+    display: flex;
+}
+.n{   
+    margin-top: 12px;
+}
+
+.name1{
+  color: #3a3a3a;
+  display: flex; 
+
+}
+.pn{    
+  font-size: 18px;
+}
+
+.quantity-container {
+    display: flex;
+    justify-content:center;
+    width: 100px;
+  }
+
+  .btn-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: lightgray;
+    cursor: pointer;
+    margin-right:5px;
+  }
+  .btn-circle:last-child {
+    margin-right: 0; /* 移除最後一個圈圈的右側間距 */
+  }
+
+  .btn-circle:hover {
+    background-color: gray;
+  }
+
+  .quantity-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 30px;
+    background-color: lightgray;
+    margin-right: 5px;
+  }
+.pimg{
+    margin-top: 2%;
+}
+.line{
+    margin-top: 2%;
+    border: 0.5px solid #aaa7a7;
+}
+
+.block-footer{
+    display: flex;
+    margin-top: 1%;
+}
+.link{
+    text-align: center;
+    margin-left: 10%;
+}
+.total{
+    color: #000000;
+    text-align: center;
+    margin-left: 63%;
+}
+.dropdown-content {
+    display: none;
+}
+.roll{
+    text-align: center;
+    margin-top: 4%;
+    background-color: #fff;
+    padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.cart2-block{
+    height: 260px;
+    position: relative;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+article{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.pay{
+    background-color: #fff;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+.send{
+    background-color: #fff;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+.sendtext{
+    padding: 5%;
+}
+.sendtext2{
+    padding: 5%;
+    margin-left:6%;
+}
+.textbox{
+    width: 200px;
+}
+.cart2-header1{
+    width: 500px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F2F2F2;
+    text-align: left;
+    color: black;
+    padding-top: 3%;
+    padding-left: 5%;
+    font-size: 20px;
+}
+.cart2-header2{
+    width: 400px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F2F2F2;
+    text-align: left;
+    color: black;
+    padding-top: 3%;
+    padding-left: 5%;
+    font-size: 20px;
+}
+.paytext1{
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #F3F3F3;
+    text-align: left;
+    padding-left: 3%;
+
+}
+.paytext2{
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #F3F3F3;
+    text-align: left;
+    padding-left: 3%;
+    
+}
+.paytext3{
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #F3F3F3;
+    text-align: left;
+    padding-left: 3%;
+
+}
+.paybutton{
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.button-container{
+    display: flex; 
+    align-items: center; 
+    width: 100%;
+}
+
+.left-buttons {
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 280px;
+    
+  } 
+  .button-container .right-buttons {
+    margin-left: 8%;
+    margin-top: 8%;
+  }
+.paymethod{
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #000000;
+}
+.paymethod-botton{
+    position: relative;
+    left: 10px;
+    top: 10px;
+    padding: 3%;
+}
+.picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; 
+    position: relative;
+  }
+  .picture .back-pic{
+    position: relative;
+    
+  }
+  .picture .top-pic{
+    position: absolute;
+    animation: paint 4s;
+  }
+  .picture .top-pic:focus{
+    animation: paint 4s;
+  }
+
+  @keyframes paint {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+  }
+  .cart3text{
+    letter-spacing: 3px;
+    margin: 24px auto;
+    color: green;
+    text-align: center;
+    font-size: 30px
+    
+  }
+  .cart2{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .money{
+    color: #000000;
+    margin-left: 81%;
+    margin-top: 2%;
+  }
+  .money-text{
+    padding: 3%;
+  }
+  .final-money{
+    font-weight: bold;
+  }
+  .visasa{
+    width: 90px;
+    height: 50px;
+    padding: 5%;
+    margin-left: 10%;
+  }
+.credit{
+    width: 150px;
+}
+.creditcard{
+    width:50px;
+}
+.c{
+    display: flex;
+}
+.d{
+    margin-top: 20%;
+}
+.a{
+    padding: 3%;
+}

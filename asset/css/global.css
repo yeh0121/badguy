@@ -45,6 +45,7 @@ p{
 /* Html5 */
 main {
     padding-top:50px;
+    min-height: 90vh;
 }
 
 footer{
@@ -73,6 +74,10 @@ section{
 .flex-c-c{
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+.flex-t-c{
+    display: flex;
     justify-content: center;
 }
 /* grid */
