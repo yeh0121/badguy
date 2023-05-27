@@ -19,11 +19,11 @@ function increase(index){
     }
 }
 function toggleDropdown() {
-  var dropdownContent = document.getElementById("myDropdown");
-  if (dropdownContent.style.display === "none") {
-      dropdownContent.style.display = "block";
+  var dropitems = document.getElementById("myDropdown");
+  if (dropitems.style.display === "none"||dropitems.style.display==="") {
+      dropitems.style.display = "block";
   } else {
-      dropdownContent.style.display = "none";
+      dropitems.style.display = "none";
   }
 }
 function elevenDropdown() {
