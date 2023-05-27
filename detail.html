@@ -173,48 +173,51 @@
 
     <main>
         <!-- 商品資訊 -->
-        <section>
-            <div class="flex-c-c gap-56">
-                <div class="detail-img">
-                    <img src="./asset/img/product/test2.png" alt="">
-                </div>
-
-                <div class="detail-intro">
-                    <div class="product-name">
-                        丁香灰大象杯
+        <section style="background-color: white; border-radius: 15px;">
+            <div class="container py-0" style="padding:64px;">
+                <div class="row flex-c-c">
+                    <div class="col-5">
+                        <div class="detail-img">
+                            <img src="./asset/img/product/test2.png" alt="">
+                        </div>
                     </div>
-                    <div class="product-price">
-                        NT$1000
-                    </div>
-                    <div class="flex-c-l mb-2">
-                        <!-- to後端：星星進度條改width的%數(因為有小數點) -->
-                        <div>
-                            <div class="star-progress" style="width: 90%;">
-                                <img src="./asset/img/display/star2.png" width="150px"  alt="">
+                    <div class="col-7">
+                        <div class="detail-intro">
+                            <div class="product-name">
+                                丁香灰大象杯
+                            </div>
+                            <div class="product-price">
+                                NT$1000
+                            </div>
+                            <div class="flex-c-l mb-2">
+                                <!-- to後端：星星進度條改width的%數(因為有小數點) -->
+                                <div>
+                                    <div class="star-progress" style="width: 90%;">
+                                        <img src="./asset/img/display/star.png" width="150px"  alt="">
+                                    </div>
+                                </div>
+                                <div class="mx-2">
+                                    4.5(13)
+                                </div>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; color: #E1885E; align-items:end;">
+                                <div>銷售量：1000</div>
+                                <div>庫存：100</div>
+                            </div>
+                            <div class="flex-c-l gap-20">
+                                <div class="quantity">
+                                    <button type="button" class="num-minus" onclick="minus(0)">
+                                        -
+                                    </button>
+                                    <input class="num-text" type="text" name="" id="" value="1">
+                                    <button type="button" class="num-add" onclick="add(0)">
+                                        +
+                                    </button>
+                                </div>
+                                <button type="button" class="cart-btn" style="width: 50%;">加入購物車</button>
                             </div>
                         </div>
-                        <div class="mx-2">
-                            4.5(13)
-                        </div>
                     </div>
-                    <div style="display: flex; justify-content: space-between; color: #E1885E; align-items:end;">
-                        <div>銷售量：1000</div>
-
-                        <div>庫存：100</div>
-                    </div>
-                    <div class="flex-c-l gap-20">
-                        <div class="quantity">
-                            <button type="button" class="num-minus" onclick="minus(0)">
-                                -
-                            </button>
-                            <input class="num-text" type="text" name="" id="" value="1">
-                            <button type="button" class="num-add" onclick="add(0)">
-                                +
-                            </button>
-                        </div>
-                        <button type="button" class="cart-btn">加入購物車</button>
-                    </div>
-                    <button type="button" class="cart-btn">直接購買</button>
                 </div>
             </div>
         </section>
@@ -256,7 +259,7 @@
                         <div class="container" >
                             <div class="row flex-c-c">
                                 <!-- 顯示評論-->
-                                <div class="col-8">
+                                <div class="col-md-8">
                                     <div style="background-color: var(--gray); padding: 12px; margin-bottom:12px;" class="flex-c-l shadow-sm rounded-3">
                                         <div style="font-size: 32px;">5.0</div>
                                         <div class="flex-c-l m-3">
@@ -346,7 +349,7 @@
                                     </div>
                                 </div>
                                 <!-- 留下評論 -->
-                                <form class="col-4" action="comment.jsp" method="post">
+                                <form class="col-md-4" action="comment.jsp" method="post">
                                     <div style="text-align: center; font-size: 24px;">留下評論</div>
                                     <hr style="width: 50%; margin: 12px auto;  border: 1px solid black;">
                                     <div>評價：</div>

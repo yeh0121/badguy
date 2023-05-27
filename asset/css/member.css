@@ -1,0 +1,130 @@
+/* member通用 */
+.menu{
+    font-size: 20px;
+    margin-bottom: 14px;
+    font-weight: bold;
+}
+.order-tab{
+    color: #39393e;
+    display: block;
+    font-size: 18px;
+    margin: 14px;
+}
+.order-tab:hover{
+    color: #3C788A;
+    font-weight: 700;
+}
+.chosen{
+    color: #3C788A;
+    font-weight: 700;
+    font-size: 20px;
+}
+.font{
+    font-size: 24px;
+    margin-bottom: 14px;
+    font-weight: bold;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.right{
+    text-align: right;
+}
+
+
+/* order */
+.nav-tabs{
+    display: flex;
+}
+
+.add{
+    color: #39393e;
+}
+
+.empty {
+    width: 200px;
+    height: 200px;
+}
+
+.order-object{
+    padding: 12px;
+    margin-bottom: 24px;
+    border: 1px solid #C2C3C4;      
+    border-radius: 5px;
+    background-color: white;                   
+}
+.member-box{
+    padding: 24px;
+    background-color: var(--gray);
+    border-radius: 0px 0px 20px 20px;
+    min-height:400px;
+    position: relative;
+}
+.member-box div:last-child{
+    margin-bottom: 0px;
+}
+.order-object:last-child{
+    margin-bottom: 0px;
+}
+.noobject{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.object-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:12px;
+}
+.order-state{
+    color: #E1885E;
+}         
+.total{
+    color: #E1885E;
+}
+
+
+
+/* setting */
+.sec-title{
+    width: fit-content;
+    border-bottom: 4px solid var(--primary);
+}
+.subtitle{
+    margin-top: 5px;
+    padding:5px 0;
+}
+.info-form{
+    margin:16px 0;
+}
+#submit {
+    background-color: #064162;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:6px;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+}
+#submit:hover{
+    background-color: #0e5984;
+}
+.imageset{
+    background-color: #39393e;
+    padding:12px;
+}
+
+.info-form input,select{
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+#myphoto{
+    max-height: 200px;
+}
+

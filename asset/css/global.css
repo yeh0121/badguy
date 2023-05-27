@@ -81,6 +81,11 @@ section{
     display: flex;
     justify-content: center;
 }
+.flex-c-b{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 /* grid */
 .grid{
     display: grid;

@@ -1,9 +1,9 @@
 .num-text{
     text-align: center;
-    width: 50%;
+    width: 70%;
     border-radius: 10px;
     border: 1px var(--primary) solid;
-    margin: 10px 0px;
+    margin: 10px 6px;
     font-size: 16px;
     padding: 5px;
 }
@@ -43,6 +43,7 @@
 .detail-img{
     background-color: white;
     border-radius: 15px;
+    text-align: center;
 }
 .detail-img img{
     width: 300px;
