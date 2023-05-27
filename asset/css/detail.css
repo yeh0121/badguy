@@ -111,6 +111,7 @@
     width: fit-content;
     padding: 24px;
     margin: 50px auto;
+    line-height: 32px;
 }
 .product-data::after{
     content: "商品規格";
