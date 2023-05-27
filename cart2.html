@@ -203,13 +203,7 @@
             <br>(點此收合訂單明細)
         </div>
         <div id="myDropdown" class="dropdown-content">
-            <div class="centerside">
-                <div class="cart-header">
-                    <h4 style="padding: 10px;">
-                        購物車(2件)
-                    </h4>
-                </div>
-            
+            <div class="centerside">            
                 <div class="block">
                     <div class="container center">
                         <div class="row align-items-center">
@@ -310,102 +304,105 @@
             </div>
         </div>
     <!--資料填寫-->
-    <article>
+    <div class="centerside d-flex justify-content-between" style="margin: 48px auto;">
+        
         <div class="pay">
-            <div class="cart2-header1">
-                運送方式＆付款方式
+            <div class="cart-header">
+                <h4 style="padding: 10px;">
+                    運送方式＆付款方式
+                </h4>
             </div>
-        <div class="button-container">
-        <div class="left-buttons">
-            <div class="paybutton">
-                <button onclick="elevenDropdown()" class="paytext1">7-ELEVEN</button>
-                
-                <div id="elevenDropdown" class="dropdown-content">
-                    <select>
-                        <option name="" class="location" >新增門市</option>
-                    </select>
-                    
-                </div>
-            </div>
-            <div class="paybutton">
-                <button onclick="familyDropdown()" class="paytext2">全家</button>
-                
-                <div id="familyDropdown" class="dropdown-content">
-                    <select>
-                        <option name="" class="location" >新增門市</option>
-                        <option name="" class="location" >中壢店</option>
-                    </select>
-                    
-                </div>
-            </div>
-            <div class="paybutton">
-                <button onclick="diliverDropdown()" class="paytext3">宅配</strong></button>
-                
-                <div id="diliverDropdown" class="dropdown-content">
-                    地址：
-                    <select>
-                        <option name="" class="location" >城市/縣</option>
-                    </select>
-                    <select>
-                        <option name="" class="location" >地區</option>
-                    </select>
-                    <input type="text" value="" class="textbox">
-                </div>
-            </div>
-        </div>
-        <div class="right-buttons">
-            <div class="paymethod-botton">
-                <button class="paymethod"id="PAYmethod">貨到付款</button><br>
-            </div>
-            <div class="paymethod-botton">
-                <button onclick="payDropdown()" class="paymethod">信用卡/金融卡</button>
-                <div id="payDropdown" class="dropdown-content">
-                    <input type="radio" name="" value="" onclick="showcredit()"><img class="visasa"src="./asset/img/cart/visa.png"><br>
-                    <div id="text-box" class="dropdown-content">
-                        <div class="d">
-                        <input type="text" placeholder="卡號" class="credit">
-                        <div class="c">
-                            <div class="a">
-                                <input type="date">
-                            </div>
-                            <div class="a">
-                                <input type="text" placeholder="安全碼" class="creditcard">
-                            </div>
+            <div class="button-container block">
+                <div class="left-buttons">
+                    <div class="paybutton">
+                        <button onclick="elevenDropdown()" class="paytext1">7-ELEVEN</button>
                         
+                        <div id="elevenDropdown" class="dropdown-content">
+                            <select>
+                                <option name="" class="location" >新增門市</option>
+                            </select>
+                            
                         </div>
                     </div>
+                    <div class="paybutton">
+                        <button onclick="familyDropdown()" class="paytext2">全家</button>
+                        
+                        <div id="familyDropdown" class="dropdown-content">
+                            <select>
+                                <option name="" class="location" >新增門市</option>
+                                <option name="" class="location" >中壢店</option>
+                            </select>
+                            
+                        </div>
+                    </div>
+                    <div class="paybutton">
+                        <button onclick="diliverDropdown()" class="paytext3">宅配</strong></button>
+                        
+                        <div id="diliverDropdown" class="dropdown-content">
+                            地址：
+                            <select>
+                                <option name="" class="location" >城市/縣</option>
+                            </select>
+                            <select>
+                                <option name="" class="location" >地區</option>
+                            </select>
+                            <input type="text" value="" class="textbox">
+                        </div>
                     </div>
                 </div>
+                <div class="right-buttons">
+                    <div class="paymethod-botton">
+                        <button class="paymethod"id="PAYmethod">貨到付款</button><br>
+                    </div>
+                    <div class="paymethod-botton">
+                        <button onclick="payDropdown()" class="paymethod">信用卡/金融卡</button>
+                        <div id="payDropdown" class="dropdown-content">
+                            <input type="radio" name="" value="" onclick="showcredit()"><img class="visasa"src="./asset/img/cart/visa.png"><br>
+                            <div id="text-box" class="dropdown-content">
+                                <div class="d">
+                                    <input type="text" placeholder="卡號" class="credit">
+                                    <div class="c">
+                                        <div class="a">
+                                            <input type="date">
+                                        </div>
+                                        <div class="a">
+                                            <input type="text" placeholder="安全碼" class="creditcard">
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
-            
-        </div>
-
-
-        </div>
         </div>
 
         <div class="send">
-            <div class="cart2-header2">
-                送貨資料
+            <div class="cart-header">
+                <h4 style="padding: 10px;">
+                    收貨資料
+                </h4>
             </div>
-            <div class="sendtext">
-            <input type="checkbox" id="">
-            <label for="">&nbsp;同會員資料</label>
+            <div class="block">
+                <div class="sendtext">
+                <input type="checkbox" id="">
+                <label for="">&nbsp;同會員資料</label>
+                </div>
+                    <div class="sendtext2">
+                        收件人名稱：
+                        <input type="text" value="" class="textbox">
+                    </div>
+                    <div class="sendtext2">
+                        收件人電話：
+                        <input type="text" value="" maxlength="10" class="textbox">
+                    </div>
+            
             </div>
-                <div class="sendtext2">
-                    收件人名稱：
-                    <input type="text" value="" class="textbox">
-                </div>
-                <div class="sendtext2">
-                    收件人電話：
-                    <input type="text" value="" maxlength="10" class="textbox">
-                </div>
-
-        
-
         </div>
            
-    </article>
+    </div>
     
     <!--按鈕-->
     <div class="link2">

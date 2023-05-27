@@ -4,7 +4,7 @@ function showPopup() {
 function decrease(index){
     const quantityDisplay = document.getElementsByClassName('quantity-display')[index];
     let quantity = parseInt(quantityDisplay.textContent);
-    if (quantity > 0) {
+    if (quantity > 1) {
         quantity--;
         quantityDisplay.textContent = quantity;
       }
@@ -13,8 +13,10 @@ function decrease(index){
 function increase(index){
     const quantityDisplay = document.getElementsByClassName('quantity-display')[index];
     let quantity = parseInt(quantityDisplay.textContent);
-    quantity++;
-    quantityDisplay.textContent = quantity;
+    if (quantity <30) {
+      quantity++;
+      quantityDisplay.textContent = quantity;
+    }
 }
 function toggleDropdown() {
   var dropdownContent = document.getElementById("myDropdown");
