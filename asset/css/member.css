@@ -101,7 +101,7 @@ li {
 .info-form{
     margin:16px 0;
 }
-#submit {
+.submit {
     background-color: #064162;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -110,7 +110,7 @@ li {
     border: none;
     padding: 5px 10px;
 }
-#submit:hover{
+.submit:hover{
     background-color: #0e5984;
 }
 .imageset{
@@ -125,6 +125,35 @@ li {
 }
 
 #myphoto{
+    max-width: 100%;
     max-height: 200px;
 }
 
+.product-data{
+    padding: 12px;
+    margin-bottom: 24px;
+    line-height: 32px;
+    border: 1px solid #C2C3C4;      
+    border-radius: 5px;
+    background-color: white;  
+}
+
+.add-product label{
+    margin: 5px auto;
+}
+
+.add-product input{
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+    padding: 0px 3px;
+}
+
+
+#product-intro{
+    width: 90%;
+    margin: auto;
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+    padding: 0px 3px;
+    min-height: 100px;
+}

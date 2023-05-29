@@ -185,7 +185,123 @@
                     <div >
                         <div class="font">編輯商品</div>
                     </div>
+                    
+
                     <div>
+                        <!-- 頁籤 -->
+                        <ul class="nav-tabs" id="myTab" role="tablist">
+                            <li role="presentation">
+                                <button class="nav-link active add" id="unpaid-tab" data-bs-toggle="tab" data-bs-target="#unpaid" type="button" role="tab" aria-controls="unpaid" aria-selected="true">修改、刪除商品</button>
+                            </li>
+                            <li role="presentation">
+                                <button class="nav-link add" id="processing-tab" data-bs-toggle="tab" data-bs-target="#processing" type="button" role="tab" aria-controls="processing" aria-selected="false">新增商品</button>
+                            </li>
+                        </ul>
+                
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="unpaid" role="tabpanel" aria-labelledby="unpaid-tab">
+                                <div class="member-box">
+                                    <div class="container">
+                                        <div class="info-form mt-0">
+                                            <form action="">
+                                                <label for="mem-name">請輸入商品編號：</label><br>
+                                                <input type="text" name="mem-name" id="mem-name" value="">
+                                                <input type="submit" value="查詢商品" id="submit" class="submit">
+                                            </form>
+                                        </div>
+                                        <form action="" method="" class="row product-data align-items-center">
+                                            <div class="col-4">
+                                                <img src="./asset/img/product/test2.png" width="100%" alt="">
+                                            </div>
+                                            <div class="col-8">
+                                                <div>商品名稱：大象杯-經典黑飲料杯</div>
+                                                <div>售價：NT$300</div>
+                                                <div>類別：飲料杯</div>
+                                                <div>品牌：elephantcuppa</div>
+                                                <div>材質：Ecozen</div>
+                                                <div>耐溫：0°C～90°C</div>
+                                                <div>容量：720ml</div>
+                                                <div>內容物：Ecozen 飲料杯、Ecozen粗吸管&細吸管、毛刷</div>
+                                            </div>
+                                            <div class="right">
+                                                <input type="submit" value="刪除商品" id="submit" class="submit m-2">
+                                                <input type="submit" value="修改商品" id="submit" class="submit m-2">
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>                             
+                            </div>
+
+                            <div class="tab-pane fade" id="processing" role="tabpanel" aria-labelledby="processing-tab">
+                                <div class="member-box">
+                                    <form action="add-product.jsp" method="post" class="container product-data ">
+                                        <div class="row align-items-center">
+                                            <div class="col-5">
+                                                <div class="mt-3">
+                                                    <!-- 照片顯示區 -->
+                                                    <div id="show" style="width: 70%; margin: auto;">
+                                                        <img id="myphoto" src="asset/img/product/test2.png" alt="" width="100%">
+                                                    </div>
+                                                    <br>
+                                                    <label for="">
+                                                        新增照片
+                                                        <input type="file" id="upload-cup" name="mypic" accept=".png,.jpg">
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-7 add-product center">
+                                                <label>
+                                                    商品名稱：
+                                                    <input type="text" value="大象杯-經典黑飲料杯">
+                                                </label>
+                                                <label>
+                                                    售價：
+                                                    <input type="text" value="NT$300">
+                                                </label>
+                                                <label>
+                                                    類別：
+                                                    <input type="text" value="飲料杯">
+                                                </label>
+                                                <label>
+                                                    品牌：
+                                                    <input type="text" value="elephantcuppa">
+                                                </label>
+                                                <label>
+                                                    材質：
+                                                    <input type="text" value="Ecozen">
+                                                </label>
+                                                <label>
+                                                    耐溫：
+                                                    <input type="text" value="0°C～90°C">
+                                                </label>
+                                                <label>
+                                                    容量：
+                                                    <input type="text" value="720ml">
+                                                </label>
+                                                <label>
+                                                    內容物：
+                                                    <input type="text" value="Ecozen 飲料杯、Ecozen粗吸管&細吸管、毛刷">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 mt-2">
+                                                <label for="" >商品簡介：</label>
+                                                <br>
+                                                <div class="center">
+                                                    <textarea name="" id="product-intro"></textarea>
+                                                </div>
+                                                <div class="right">
+                                                    <input type="submit" value="新增商品" id="submit" class="submit m-2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>  
+                            </div>                            
+                        </div>
                     </div>
                 </div>
             </div>
@@ -204,5 +320,7 @@
      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
      <!-- loading -->
      <script src="./asset/js/loading.js"></script>
+     <!-- upload -->
+     <script src="./asset/js/photo.js"></script>
 </body>
 </html>
