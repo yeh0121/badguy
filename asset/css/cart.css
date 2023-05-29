@@ -8,7 +8,7 @@
     min-width: 300px;
 }
 .centerside{
-    width: 70%;
+    width: 60%;
     margin: auto;
 }
 
@@ -122,7 +122,7 @@
     justify-content: flex-start;
 }
 .link2{
-    width: 70%;
+    width: 60%;
     margin: 24px auto;
     display: flex;
     align-items: center;
@@ -241,10 +241,10 @@
 
 .roll{
     text-align: center;
-    width: 70%;
+    width: 60%;
     margin:auto;
     margin-top: 24px;
-    background-color: #F2F2F2;
+    background-color: #e5e5e5;
     padding: 12px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -268,12 +268,12 @@ article{
     display: flex;
     justify-content: center;
 }
-.pay{
+/* .pay{
     width: 57%;
 }
 .send{
     width: 40%;
-}
+} */
 .sendtext{
     padding: 5%;
 }
@@ -464,13 +464,83 @@ article{
     padding: 5%;
     margin-left: 10%;
   }
-.credit{
-    width: 150px;
-}
+
 .creditcard{
     width:50px;
 }
 
 .right{
     text-align: right;
+}
+
+
+
+
+.ship{
+    color: rgb(104, 104, 104);
+    font-size: 18px;
+    width: 100%;
+}
+.ship input{
+    display: none;
+}
+.ship label:hover{
+    cursor:pointer;
+    color:#CB7D09;
+    border-color:#CB7D09 ;
+}
+
+.ship label{
+    width: 70%;
+    margin: 5px;
+    padding: 5px;
+    border: rgb(222, 222, 222) solid 2px;
+    border-radius: 5px;
+}
+.ship input:checked+label{
+    border: 3px solid #CB7D09;
+    color: #CB7D09;
+    font-weight: bold;
+    margin:4px;
+}
+
+.ship input:checked+.dropdown-content{
+    display: block;
+}
+
+
+.fill-in{
+    font-size: 18px;
+    line-height: 28px;
+}
+.fill-in input[type~="name"],input[type~="phone"] {
+    line-height: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    border:solid 2px rgb(192, 192, 192);
+    width: 150px;
+}
+.fill-in input[type~="name"]:focus,input[type~="phone"]:focus{
+    border:solid 2px #CB7D09;
+}
+.fill-in input[type~="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    border-radius: 5px;
+    transform: translateY(1px);
+    cursor: pointer;
+}
+.fill-in input[type~="checkbox"]+label{
+    cursor: pointer;
+}
+.fill-in input[type~="checkbox"]+label:hover{
+    color: #CB7D09;
+}
+.fill-in input[type~="checkbox"]:checked {
+    background-color: #CB7D09;
+}
+
+.fill-in div{
+    margin: 12px auto;
 }

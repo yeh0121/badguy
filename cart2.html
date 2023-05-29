@@ -193,8 +193,6 @@
             </div>
         </div>
 
-        <!--商品-->
-        
         <div onclick="toggleDropdown()" class="roll">
             <strong style="font-size: larger;">
                 訂單總金額：NT＄950
@@ -261,9 +259,6 @@
                                 <div class="n col-2">NT$1000</div>
                             </div>
 
-                            
-
-                            
                         </div>
                     </div>
                     <div style="line-height: 32px; margin: auto 5%;">
@@ -296,114 +291,70 @@
     
     <!--資料填寫-->
     <form action="./cart3.html">
-        <div class="centerside d-flex justify-content-between" style="margin: 48px auto;">
-        
-            <div class="pay">
+        <div class="row centerside d-flex justify-content-between" style="margin: 48px auto;">
+            <div class="col-12 col-md-7">
                 <div class="cart-header">
                     <h4 style="padding: 10px;">
-                        運送方式＆付款方式
+                        運送、付款方式
                     </h4>
                 </div>
-                <div class="d-flex block">
-                    <div class="left-buttons">
-                        <div class="paybutton">
-                            <button onclick="LocationColor('location1')" class="paytext1" id="location1">7-ELEVEN</button>
-        
-                            <div id="elevenDropdown" class="dropdown-content">
-                                <select>
-                                    <option name="" class="location" >新增門市</option>
-                                    <option name="" class="location" >中壢店</option>
-                                    <option name="" class="location" >原大店</option>
-                                </select>
-        
-                            </div>
+
+                <div class="d-flex block justify-content-between">
+                    <div class="ship">
+                        請選擇取貨方式
+                        <input type="radio" name="ship" id="seven">
+                        <label for="seven">7-11</label>
+                        <div id="elevenDropdown" class="dropdown-content">
+                            <select>
+                                <option name="" class="location" >新增門市</option>
+                                <option name="" class="location" >中壢店</option>
+                                <option name="" class="location" >原大店</option>
+                            </select>
                         </div>
-                        <div class="paybutton">
-                            <button onclick="LocationColor('location2')" class="paytext2" id="location2">全家</button>
-        
-                            <div id="familyDropdown" class="dropdown-content">
-                                <select>
-                                    <option name="" class="location" >新增門市</option>
-                                    <option name="" class="location" >中壢店</option>
-                                    <option name="" class="location" >原大店</option>
-                                </select>
-        
-                            </div>
-                        </div>
-                        <div class="paybutton">
-                            <button onclick="LocationColor('location3')" class="paytext3" id="location3">宅配</strong></button>
-                            <div id="diliverDropdown" class="dropdown-content">
-                                地址：
-                                <select>
-                                    <option name="" class="location" >城市/縣</option>
-                                    <option name="" class="location" >台北</option>
-                                    <option name="" class="location" >新北市</option>
-                                    <option name="" class="location" >桃園市</option>
-                                    <option name="" class="location" >台中市</option>
-                                    <option name="" class="location" >台南市</option>
-                                    <option name="" class="location" >高雄市</option>
-                                </select>
-                                <select>
-                                    <option name="" class="location" >地區</option>
-                                </select>
-                                <input type="text" value="" class="textbox">
-                            </div>
-                        </div>
+                        <br>
+                        <input type="radio" name="ship" id="family">
+                        <label for="family">全家</label>
+                        <br>
+                        <input type="radio" name="ship" id="delivery">
+                        <label for="delivery">宅配</label>
                     </div>
-                    <div class="right-buttons">
-                        <div class="paymethod-botton">
-                            <button onclick="changeColor('button1')" class="paymethod"id="button1">貨到付款</button><br>
-                        </div>
-                        <div class="paymethod-botton">
-                            <button onclick="changeColor('button2')" class="paymethod"id="button2">信用卡/金融卡</button>
-                            <div id="payDropdown" class="dropdown-content">
-                                <input type="radio" name="" value="" onclick="touch()"><img class="visasa"src="./asset/img/cart/visa.png"><br>
-                                <div id="text-box" class="dropdown-content">
-                                    <div class="d">
-                                    <input type="text" placeholder="卡號" class="credit">
-                                    <div class="c">
-                                        <div class="a">
-                                            <input type="date">
-                                        </div>
-                                        <div class="a">
-                                            <input type="text" placeholder="安全碼" class="creditcard">
-                                        </div>
-        
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-        
+
+                    <div class="ship">
+                        請選擇付款方式
+                        <input type="radio" name="payway" id="cash">
+                        <label for="cash">貨到付款</label>
+                        <br>
+                        <input type="radio" name="payway" id="credit">
+                        <label for="credit">信用卡</label>
                     </div>
                 </div>
             </div>
-            <div class="send">
+
+            <div class="col-12 col-md-5">
                 <div class="cart-header">
                     <h4 style="padding: 10px;">
-                        收貨資料
+                        收件人資料
                     </h4>
                 </div>
-                <div class="block">
-                    <div class="sendtext">
-                    <input type="checkbox" id="">
-                    <label for="">&nbsp;同會員資料</label>
+                <div class="block fill-in">
+                    <div class="flex-c-l">
+                        <input type="checkbox" id="mem-data">
+                        <label for="mem-data">同會員資料</label>
                     </div>
-                        <div class="sendtext2">
-                            收件人名稱：
-                            <input type="text" value="" class="textbox">
-                        </div>
-                        <div class="sendtext2">
-                            收件人電話：
-                            <input type="text" value="" maxlength="10" class="textbox">
-                        </div>
-        
+                    <div class="flex-c-l">
+                        姓名：
+                        <input type="name" value="我的名字">
+                    </div>
+                    <div class="flex-c-l">
+                        電話：
+                        <input type="phone" value="0912345678" maxlength="10">
+                    </div>
                 </div>
             </div>
         </div>
         <!--按鈕-->
         <div class="link2">
-            <a href="./cart.html" class="icon2"> &lt;購物清單 </a>
+            <a href="./cart.html" class="icon2"><i class="fa-solid fa-chevron-left"></i>購物清單 </a>
             <a href="./cart3.html">
                 <input type="submit" class="button" value="送出訂單">
             </a>
