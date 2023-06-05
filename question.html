@@ -30,11 +30,12 @@
                         <span>杯GUY</span>
                     </div>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button id="nav-dropbtn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                onclick="document.getElementById('nav-dropbtn').classList.toggle('rotate180')">
+                    <span><i class="fa-solid fa-caret-down"></i></span>
                 </button>
                 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse  mb-3 mb-md-0" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -56,12 +57,22 @@
                         </li>
                     </ul>
     
-                    <ul class="navbar-nav mb-2 mb-lg-0">
+                    <div class="fs-6 me-3 d-none d-md-block">
+                        hi! 管理員~
+                        <!-- hi! username~ -->
+                    </div>
+                    <!-- 三個icon -->
+                    <ul class="navbar-nav-md flex-c-c mb-2 mb-lg-0">
                         <li class="nav-icon">
-                            <a href="/index.html" class="nav-link"><i class="fa-solid fa-house-chimney"></i></a>
+                            <a href="./index.html" class="nav-link"><i class="fa-solid fa-house-chimney"></i></a>
                         </li>
+                        <!-- 購物車icon(一班會員登入後才顯示) -->
                         <li class="nav-icon">
                             <a href="./cart.html" class="nav-link"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </li>
+                        <!-- 扳手icon(管理員登入後才顯示) -->
+                        <li class="nav-icon">
+                            <a href="./backstage.html" class="nav-link"><i class="fa-solid fa-wrench"></i></a>
                         </li>
                         <!-- 登入前user-btn -->
                         <li class="nav-icon">
@@ -69,15 +80,10 @@
                                 <i class="fa-solid fa-user-large"></i>
                             </button>
                         </li>
-                        <!-- 登入後user-btn -->
-                        <template>
-                            <li class="nav-icon">
-                                <a href="./member.html" class="nav-link"><i class="fa-solid fa-user-large"></i></a>
-                            </li>
-                        </template>
                     </ul>
     
-                    <form class="d-flex" role="search" method="get" action="./search.html">
+                    <!-- 搜尋商品 -->
+                    <form class="" role="search" method="get" action="./search.html">
                         <div class="logo">
                             <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -86,7 +92,7 @@
                 </div>
             </div>
             
-    
+            <!-- 登入註冊的小視窗(後端可以另外建一個檔) -->
             <div id="sign">
                 <div class="sign-area">
                     <div class="quit">
@@ -111,6 +117,7 @@
                         </li>
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
+                        <!-- 登入 -->
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                             <form action="post">
                                 <div class="input-area">
@@ -121,6 +128,7 @@
                                 </div>
                             </form>
                         </div>
+                        <!-- 註冊 -->
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                             <form action="post">
                                 <div class="input-area">
@@ -138,38 +146,71 @@
     </header>
 
     <main>
-      <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-              Accordion Item #1
-            </button>
-          </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+      <section class="rounded-3">
+        <h2 class="page-title">常見問題</h2>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    1.請問有實體店面嗎？
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">不好意思，我們目前規模僅止於線上選物店，礙於成本考量我們還沒有辦法拓展為實體店面，希望您能多多支持我們的商品，帶領我們一同拓展為實體店。</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    2.若商品有問題該怎麼聯絡你們？
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">若發現商品有受損或是漏水等問題，請撥打0800-123-456將有客服專人為你解決，或是可以提供照片、影片傳到以下的電子郵件badguy@gmail.com。</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    3.我如果要退貨，請問地址要填哪裡？
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">本公司尚無實體店面，代收退貨物品請寄往桃園市中壢區中北路200號。</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    4.我該怎麼知道我的貨是否出貨？
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">你的訂單資訊都將顯示於會員中心，會員中心將提供你完整的物流資訊以及更改個人資料之功能。</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    5.我下單後多久可以拿到商品？
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">我們將會在您下單後的3個工作日內出貨，物流將在出貨後2~4天送達，大約4~7天後可取貨。</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                    6.我的商品訂購有誤，請問我取消訂單是否需負擔額外費用？
+                  </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">基於誠信考量，本公司在你無故取消三筆訂單後才會考核你的會員資格，若被發現為惡意訂購並取消，將取消您的終身會員資格，若有其他不可控之原因請聯繫客服，將有專人為您服務。</div>
+                </div>
+            </div>
           </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-              Accordion Item #2
-            </button>
-          </h2>
-          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-              Accordion Item #3
-            </button>
-          </h2>
-          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-          </div>
-        </div>
-      </div>
+      </section>
     </main>
 
     <footer>

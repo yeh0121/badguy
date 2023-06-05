@@ -32,6 +32,14 @@ li {
 .right{
     text-align: right;
 }
+.member-area{
+    background-color: white; 
+    padding: 24px; 
+    border-radius: 20px; 
+    width: 90%; 
+    margin: 30px auto;
+}
+
 
 
 /* order */
@@ -65,6 +73,9 @@ li {
 .member-box div:last-child{
     margin-bottom: 0px;
 }
+.member-box form:last-child{
+    margin-bottom: 0px;
+}
 .order-object:last-child{
     margin-bottom: 0px;
 }
@@ -86,7 +97,6 @@ li {
 .total{
     color: #E1885E;
 }
-
 
 
 /* setting */
@@ -157,3 +167,46 @@ li {
     padding: 0px 3px;
     min-height: 100px;
 }
+
+
+@media (min-width: 576px) {
+    
+}
+
+@media (min-width: 768px) {
+    .member-area{
+        width: 70%; 
+        margin: 50px auto;
+    }
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) { 
+    
+}
+
+@media (min-width: 1400px) {
+    
+}
+
+
+
+
+/* 
+1.請問有實體店面嗎？
+不好意思，我們目前規模僅止於線上選物店，礙於成本考量我們還沒有辦法拓展為實體店面，希望您能多多支持我們的商品，帶領我們一同拓展為實體店。
+
+2.若商品有問題該怎麼聯絡你們？
+若發現商品有受損或是漏水等問題，請撥打0800-123-456將有客服專人為你解決，或是可以提供照片、影片傳到以下的電子郵件badguy@gmail.com。
+
+3.我如果要退貨，請問地址要填哪裡？
+本公司尚無實體店面，代收退貨物品請寄往桃園市中壢區中北路2000號。
+
+4.我該怎麼知道我的貨出貨沒？
+你的訂單資訊都將顯示於會員中心，會員中心將提供你完整的物流資訊以及更改個人資料之功能。
+
+5.我的商品訂購有誤，請問我取消訂單是否需負擔額外費用？
+基於誠信考量，本公司在你無故取消三筆訂單後才會考核你的會員資格，若被發現為惡意訂購並取消，將取消您的終身會員資格，若有其他不可控知原因請聯繫客服，將有專人為您服務。 */

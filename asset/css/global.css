@@ -131,6 +131,22 @@ section{
     animation: rotate 5s ;
   }
 
+  /* .accordion-button{
+    
+  } */
+
+  .accordion-button:focus {
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .accordion-button:not(.collapsed) {
+    background-color: #A3C0C8;
+    color:white;
+    font-weight: 600;
+  }
+.accordion-body{
+    text-indent: 2em;
+}
 
 @keyframes rotate {
     0%{

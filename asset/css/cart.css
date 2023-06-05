@@ -544,3 +544,8 @@ article{
 .fill-in div{
     margin: 12px auto;
 }
+
+.remove{
+    border: none;
+    background-color: transparent;
+}

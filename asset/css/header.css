@@ -94,6 +94,7 @@ nav i{
 #log-out:hover .dropdown-menu{
     display: block;
 }
+
 @keyframes rotate180 {
     0%{
         transform: rotate(+0deg);
